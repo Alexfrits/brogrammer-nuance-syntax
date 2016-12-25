@@ -1,10 +1,10 @@
 {
-  "name": "brogrammer-syntax",
+  "name": "brogrammer-nuance-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "A short description of your theme",
-  "repository": "https://github.com/kenwheeler/brogrammer-syntax",
+  "description": "A fork of Ken Wheeler's brogrammer-syntax, an attempt to fix some tabs color issues",
+  "repository": "https://github.com/alexfrits/brogrammer-nuance-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"

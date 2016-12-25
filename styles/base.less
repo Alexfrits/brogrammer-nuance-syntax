@@ -13,7 +13,7 @@ atom-text-editor, :host {
 atom-text-editor, :host {
   .invisible-character,
   .indent-guide {
-    color: @base01;
+    color: @base05;
   }
 
   .gutter {
@@ -121,3 +121,26 @@ atom-text-editor, :host {
     }
   }
 }
+
+// I don't know why but
+// One Dark UI + Brogrammer syntax don't play along (i.e. the tabs are white).
+// So I'm hacking the tabs here even though
+// they should be styled in the UI component
+.tab-bar {
+  .tab.active {
+
+    &[data-type$="Editor"],
+    &[data-type="MarkdownPreviewView"] {
+      background-color: @base02;
+
+      .title {
+        background-color: @base02;
+      }
+
+      &::after {
+        border-bottom-color: @base02;
+      }
+    }
+
+    }
+  }
